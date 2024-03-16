@@ -129,15 +129,19 @@ nav ul .list-link-2:hover::after{
 
 /*****       main  ******/
     /* mais barre de recherche */
+.info-ville-et-filtres{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
 .info-ville-et-filtres .lieux-hébergement{
     display: flex;
     flex-direction: column;
     height: 100px;
-    margin-top: 20px;
+    
 }
 .info-ville-et-filtres .lieux-hébergement p{
-    position: relative;
-    top: -35px;
+    margin-top: -12px 
 }
 
 
@@ -147,14 +151,15 @@ nav ul .list-link-2:hover::after{
 }
 
 .icon-location{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 20px 0 0 20px;
     background-color: #ccc;
 }
-.icon-location .position-icon{
-  display: flex;
-  justify-content: center;
-  margin-top: 40px;
-}
+
 input[type="search"]{
     font-size: 18px;
     font-weight: 700;
@@ -179,33 +184,13 @@ input[type="submit"]{
     outline: none;
 
 }
-/*
-.fa-magnifying-glass{
-    border-radius: 20px;
-    background-color: #0065FC;
-    font-size: 30px;
-    width: 50px;
-    height: 17px;
-    font-weight: 700;
-    color: white;
-    cursor: pointer;
-    border: none;
-    outline: none;
-    display: flex;
-    align-items: center;
-    margin: auto;
-}  */
 
 form{
-    width: 535px;
+    width: 335px;
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
-    margin-bottom: 30px;
-    margin-top: 60px;
-    background-color: blue;
     border-color: #ccc;
     border: none;
-    height: 100px;
     border-radius: 20px;
     outline: none;
 }
@@ -305,6 +290,7 @@ form{
 .hebergements-cards-1 a .card-1{
     background-color: #fff;
     border-radius: 20px ;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 .hebergements-cards-1 a .card-content-1{
     padding: 0px 15px 10px;
@@ -367,11 +353,7 @@ form{
 
 
 /* activités marseille */
-.carte{
-    border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-}
+
 
 .mes-activités .mes-cartes a .carte .carte-image img{
     width:100% ;
@@ -391,7 +373,9 @@ form{
     margin: 10px;
 }
 .mes-cartes a .carte {
-    
+    border-radius: 20px;
+    overflow: hidden;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     background-color: white;
 }
 
@@ -530,6 +514,7 @@ footer .footer-info p a{
     
       
     /* le header  */
+    
     body{
       
     }
@@ -537,36 +522,28 @@ footer .footer-info p a{
       
       width: 100%;
     }
-    .logo{
-      position: relative;
-      top: 25px;
-     
+    .logo-and-list .logo{
       
   
     }
-    .logo-and-list{
-      
-    }
+    
     .logo-and-list {
-      display: flex;
-      flex-direction: column; 
-      align-items: center; 
-      gap: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
     }
-    nav{
-      display: flex;
-      justify-content: center;
-      
-     
-      width: 100%;
-  
-      
+   
+    .logo-and-list nav .list-link{
+        display: flex;
+        justify-content: space-around;
+        gap: inherit;
     }
-    nav .list-link{
-      position: relative;
-      right: 30px;
-      align-items: center;
+    .logo-and-list nav{
+        width: 100%;
     }
+
   
     nav ul .list-link-1:hover::after{
       content: '';
@@ -607,6 +584,7 @@ footer .footer-info p a{
       
     }
     .populaires{
+      background-color: var(--main-bg-color);
       width: 100%;
       justify-content: center;
     }
@@ -617,7 +595,7 @@ footer .footer-info p a{
     /* activités marseille */
     .mes-activités{
         width: 100%;
-        background-color: red;
+        
     }
     .mes-activités .mes-cartes a .carte .carte-image img{
         width:100% ;
@@ -636,8 +614,14 @@ footer .footer-info p a{
         gap: 20px;
 
     }
+    .hebergements-cards-1 {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
     
-  
     /* le footer  */
     footer{
       display: block;
