@@ -605,7 +605,13 @@ footer .footer-info p a{
       background-color:#0065FC ;
       position: absolute; 
     }
+    
+    /*****       main  ******/
     /* mais barre de recherche */
+    .info-ville-et-filtres{
+        margin: 0;
+        padding: 30px;
+    }
     .form-1{
         display: none;
     }
