@@ -110,19 +110,20 @@ nav ul .list-link-1:hover::after{
     content: '';
     
     width: 111px;
-    height: 4px;
+    height: 3px;
     display: flex;
-    top: -10px;
+    top: -25px;
     background-color:#0065FC ;
     position: absolute; 
+    
 }
 nav ul .list-link-2:hover::after{
     content: '';
     
     width: 62px;
-    height: 4px;
+    height: 3px;
     display: flex;
-    top: -10px;
+    top: -25px;
     background-color:#0065FC ;
     position: absolute; 
 }
@@ -476,15 +477,19 @@ footer .footer-info p a{
       max-width: 1024px;
       padding: 10px;
     }
+    nav ul .list-link-1:hover::after{
+       
+        top: -34px;
+    }
+    nav ul .list-link-2:hover::after{
+        
+        top: -34px;
+    }
     
-  
     /* les filtres  */
     .les-filtres{
       display: block;
       flex-direction: column;
-      
-    
-      
     }
   
     /****** Hebergements And Populaires ***********/
@@ -571,6 +576,7 @@ footer .footer-info p a{
         justify-content: center;
         align-items: center;
         padding: 20px;
+        border-bottom: 4px solid #F2F2F2;
     }
    
     .logo-and-list nav .list-link{
@@ -580,6 +586,9 @@ footer .footer-info p a{
     }
     .logo-and-list nav{
         width: 100%;
+        position: relative;
+        top: 20px;
+        left: -15px;
     }
 
   
@@ -604,6 +613,10 @@ footer .footer-info p a{
       right: -10px;
       background-color:#0065FC ;
       position: absolute; 
+    }
+    .list-link .list-link-1 a{
+        position: relative;
+        left: -40px;
     }
     
     /*****       main  ******/
