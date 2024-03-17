@@ -156,7 +156,7 @@ nav ul .list-link-2:hover::after{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 20px 0 0 20px;
+    border-radius: 15px 0 0 15px;
     background-color: #ccc;
 }
 
@@ -174,7 +174,7 @@ input{
     transition: .5s;
 }
 input[type="submit"]{
-    border-radius: 0 20px 20px 0;
+    border-radius: 0 15px 15px 0;
     background-color: #0065FC;
     font-size: 18px;
     font-weight: 700;
@@ -184,10 +184,48 @@ input[type="submit"]{
     outline: none;
 
 }
-
-form{
+.form-1{
     width: 335px;
     display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    border-color: #ccc;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+}
+.form-2 input[type="search"]{
+    font-size: 18px;
+    font-weight: 700;
+    border: 1px solid;
+    outline: none;
+    border-color: #ccc;
+    position: relative;
+    left: -5px;
+}
+.icon-search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px 15px 15px 15px;
+    background-color: #0065FC;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    width: 50px;
+    position: relative;
+    left: -40px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+.fa-magnifying-glass{
+    color: white;
+}
+
+.form-2{
+    width: 335px;
+    display: none;
     grid-template-columns: 1fr 4fr 1fr;
     border-color: #ccc;
     border: none;
@@ -516,7 +554,7 @@ footer .footer-info p a{
     /* le header  */
     
     body{
-      
+      margin: 0;
     }
     header{
       
@@ -567,12 +605,26 @@ footer .footer-info p a{
       background-color:#0065FC ;
       position: absolute; 
     }
+    /* mais barre de recherche */
+    .form-1{
+        display: none;
+    }
+    .form-2{
+        display: grid;
+    }
+
     /****** Hebergements And Populaires ***********/
     .hebergements-and-populaires {
       flex-direction: column-reverse;
     }
-    .hebergements-and-populaires section {
+    .hebergements-and-populaires .hebergements {
         background-color: white;
+        border-radius: 0px;
+        margin: 0px;
+        padding: 30px;
+        box-sizing: border-box;
+    }
+    .hebergements-and-populaires .populaires {
         border-radius: 0px;
         margin: 0px;
         padding: 30px;
@@ -612,7 +664,6 @@ footer .footer-info p a{
         flex-direction: column;
     
         gap: 20px;
-
     }
     .hebergements-cards-1 {
         width: 100%;
