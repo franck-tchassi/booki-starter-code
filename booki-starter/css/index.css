@@ -646,7 +646,8 @@ footer .footer-info p a{
 
     /* activités marseille */
     .mes-activités{
-        width: 100%;
+       margin: 0px;
+       padding: 30px;
         
     }
     .mes-activités .mes-cartes a .carte .carte-image img{
@@ -676,7 +677,8 @@ footer .footer-info p a{
     /* le footer  */
     footer{
       display: block;
-      padding: 0px 15px;
+      margin: 0px;
+      padding: 30px;
       height: 420px;
       
       /*background-color:#F2F2F2; */
