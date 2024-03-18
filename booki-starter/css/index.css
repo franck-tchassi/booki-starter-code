@@ -262,13 +262,21 @@ input[type="submit"]{
 .les-filtres div .icone-filtres:hover{
     background-color: #DEEBFF;
 }
-.les-filtres h3{
+.les-filtres h2{
     font-size: 18px;
-    height: 700;
+   font-weight: 700
 }
-.les-filtres .icone-filtres h4{
-    font-size: 17px;
-    height: 700;
+.les-filtres .icone-filtres p{
+    font-size: 16px;
+    font-weight: 700;
+}
+.les-filtres .icone-filtres .icon-person{
+    position: relative;
+    left: -18px;
+}
+.les-filtres .icone-filtres .nom-icon-person{
+    position: relative;
+    left: -18px ;
 }
   
 .information-nbs-logements{
@@ -641,6 +649,26 @@ footer .footer-info p a{
         padding: 30px;
         box-sizing: border-box;
     }
+    .hebergements-cards-1 a .card-1 img {
+        width: 98%;
+        height: 220px;
+    }
+    .hebergements-cards-1 a .card-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fff;
+        
+        filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    }
+    .hebergements-cards-1 a .card-content-1 {
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        margin-top: -15px;
+        width: 100%;
+        margin-left: 50px;
+    }
     .hebergements-and-populaires .populaires {
         border-radius: 0px;
         margin: 0px;
@@ -675,7 +703,7 @@ footer .footer-info p a{
         
     }
     .mes-activités .mes-cartes a .carte{
-        width: 300px;
+        width: 100%;
     }
     .mes-activités .mes-cartes{
         display: flex;
