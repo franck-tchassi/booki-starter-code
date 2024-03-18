@@ -138,8 +138,6 @@ nav ul .list-link-2:hover::after{
 .info-ville-et-filtres .lieux-hébergement{
     display: flex;
     flex-direction: column;
-    height: 100px;
-    
 }
 .info-ville-et-filtres .lieux-hébergement p{
     margin-top: -12px 
