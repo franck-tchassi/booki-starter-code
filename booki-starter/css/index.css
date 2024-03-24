@@ -192,43 +192,15 @@ input[type="submit"]{
     border-radius: 20px;
     outline: none;
 }
-.form-2 input[type="search"]{
-    font-size: 18px;
-    font-weight: 700;
-    border: 1px solid;
-    outline: none;
-    border-color: #ccc;
-    position: relative;
-    left: -5px;
-}
-.icon-search{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 15px 15px 15px 15px;
+.fa-magnifying-glass{
+    display: none;
+    border-radius: 0 15px 15px 0;
     background-color: #0065FC;
     font-size: 18px;
     font-weight: 700;
     color: white;
     cursor: pointer;
     border: none;
-    outline: none;
-    width: 50px;
-    position: relative;
-    left: -40px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-}
-.fa-magnifying-glass{
-    color: white;
-}
-
-.form-2{
-    width: 335px;
-    display: none;
-    grid-template-columns: 1fr 4fr 1fr;
-    border-color: #ccc;
-    border: none;
-    border-radius: 20px;
     outline: none;
 }
     /* les filtres */
@@ -662,11 +634,20 @@ footer .footer-info p a{
         margin: 0;
         padding: 30px;
     }
-    .form-1{
+    .fa-magnifying-glass{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        left: -6px;
+    }
+    input[type="submit"]{
         display: none;
     }
-    .form-2{
-        display: grid;
+    input[type="search"] {
+        
+        position: relative;
+        left: -6px;
     }
 
     /****** Hebergements And Populaires ***********/
