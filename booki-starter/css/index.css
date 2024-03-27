@@ -263,7 +263,7 @@ input[type="submit"]{
     
 }
 .information-nbs-logements p{
-    width: 400;
+    font-weight: 400;
     font-size: 16px;
 }
 .information-nbs-logements .circle-info {
@@ -512,8 +512,6 @@ footer .footer-info p a{
     /* le footer  */
     footer{
       display: flex;
-      justify-content: none;
-      
       position: relative;
       bottom: -10px;
     }
@@ -737,10 +735,6 @@ footer .footer-info p a{
       margin: 0px;
       padding: 30px;
       height: 420px;
-      
-      /*background-color:#F2F2F2; */
-      background-color: calc(--main-bg-color);
-    
     }
     .footer-info{
       margin-bottom: 50px;
