@@ -172,7 +172,7 @@ input{
     box-sizing: border-box;
     transition: .5s;
 }
-input[type="submit"]{
+.submit{
     border-radius: 0 15px 15px 0;
     background-color: #0065FC;
     font-size: 18px;
@@ -192,17 +192,25 @@ input[type="submit"]{
     border-radius: 20px;
     outline: none;
 }
-.fa-magnifying-glass{
+
+
+.button-magnifying{
     display: none;
-    border-radius: 0 15px 15px 0;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: -25px;
+    border-radius: 15px 15px 15px 15px;
     background-color: #0065FC;
     font-size: 18px;
     font-weight: 700;
     color: white;
     cursor: pointer;
     border: none;
-    outline: none;
+    
 }
+
+
     /* les filtres */
 .les-filtres{
     display: flex;
@@ -320,7 +328,11 @@ input[type="submit"]{
 .hebergements-cards-1 a .card-content-1 .card-icones-1{
     margin-top: -10px;
 }
-
+.hebergements .hebergements-cards-1 h3{
+    font-weight: 700;
+    font-size: 18px;
+    cursor: pointer;
+}
 
 /****** Populaires ***********/
 .populaires {
@@ -332,8 +344,13 @@ input[type="submit"]{
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
+}
+.populaires-cards{
+    display: flex;
+    flex-direction: column;
+
+}
+
 .populaires-cards .card {
     display: flex;
     margin-top: 33px;
@@ -445,9 +462,7 @@ footer .footer-info p a{
 /*          ...................     pour Tablette (1024 px )   ..............        */
 @media screen and (max-width: 1024px) {
     /* le header  */
-    body{
-      
-    }
+    
     .main-container{
      
       width: 98%;
@@ -541,11 +556,7 @@ footer .footer-info p a{
       
       width: 100%;
     }
-    .logo-and-list .logo{
-      
-  
-    }
-    
+   
     .logo-and-list {
         display: flex;
         flex-direction: column;
@@ -632,14 +643,13 @@ footer .footer-info p a{
         margin: 0;
         padding: 30px;
     }
-    .fa-magnifying-glass{
+    .button-magnifying{
         display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        left: -6px;
     }
-    input[type="submit"]{
+    .fa-magnifying-glass{
+        color: white;
+    }
+    .submit{
         display: none;
     }
     input[type="search"] {
@@ -647,6 +657,7 @@ footer .footer-info p a{
         position: relative;
         left: -6px;
     }
+    
 
     /****** Hebergements And Populaires ***********/
     .hebergements-and-populaires {
@@ -709,9 +720,7 @@ footer .footer-info p a{
         width:100% ;
         height:150px;    
     }
-    .mes-activités .mes-cartes a .carte .carte-image{
-        
-    }
+    
     .mes-activités .mes-cartes a .carte{
         width: 100%;
     }
